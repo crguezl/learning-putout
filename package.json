@@ -12,6 +12,7 @@
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
   "license": "ISC",
   "devDependencies": {
+    "@putout/plugin-putout": "^11.1.0",
     "putout": "^25.14.3"
   }
 }

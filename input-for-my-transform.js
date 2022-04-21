@@ -1,7 +1,7 @@
 let a = 4;
 function f(x) {
-  let y = x + x;
+  let y = 2 * x;
   let z = y + y * 3; // Will it work?
   return y + z;
 }
-f(a)+f(a);
+2 * f(a);

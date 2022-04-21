@@ -7,6 +7,7 @@
         "promises/add-missing-await": "off",
         "promises/remove-useless-async": "off",
         "convert-commonjs-to-esm": "off",
-        "remove-console": "off"
+        "remove-console": "off",
+        "putout": "on"
     }
 }
