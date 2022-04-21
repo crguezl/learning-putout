@@ -1,7 +1,9 @@
-'use strict';
+const unused = 5;
 
-module.exports = async () => await promise();
+export default function() {
+    return promise();
+};
 
-function promise() {
+async function promise(a) {
     return Promise.reject(Error('x'));
 }

@@ -1,0 +1,11 @@
+{
+    "rules": {
+        "remove-unused-variables": "off",
+        "convert-to-arrow-function": "off",
+        "strict-mode/add": "off",
+        "promises/convert-reject-to-throw": "off",
+        "promises/add-missing-await": "off",
+        "promises/remove-useless-async": "off",
+        "convert-commonjs-to-esm": "on"
+    }
+}
