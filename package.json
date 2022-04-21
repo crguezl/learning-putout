@@ -5,7 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "putout --fix index.js"
+    "test": "putout --fix index.js",
+    "start": "npm run copy; putout --fix input-for-my-transform.js",
+    "copy": "cp input-for-my-transform.js input-for-my-transform-original.js; cp my-transform.js ~/.putout"
   },
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
   "license": "ISC",
