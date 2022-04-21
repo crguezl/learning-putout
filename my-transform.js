@@ -1,7 +1,6 @@
 // Copy this file to ~/.putout
-module.exports.report = () => `Identifiers should be swapped`;
+module.exports.report = () => `Repeated expressions in sums are transformed onto multiplication.`;
 
 module.exports.replace = () => ({
-    'let __a = __b': 'const __b = __a'
+    '__b + __b': '2 * __b'
 });
-
