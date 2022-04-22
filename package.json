@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "test": "putout --fix index.js",
     "start": "npm run copy; putout --fix input-for-my-transform.js",
@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@putout/plugin-putout": "^11.1.0",
+    "@putout/plugin-remove-useless-await": "^1.3.1",
     "putout": "^25.14.3"
   }
 }
