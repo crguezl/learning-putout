@@ -13,6 +13,7 @@
         "apply-optional-chaining": "off",
         "remove-debugger": "off",
         "my-transform.js": "off",
-        "gitignore": "off"
+        "gitignore": "off",
+        "remove-unreachable-code": "on"
     }
 }
