@@ -8,7 +8,8 @@
     "test": "putout --fix index.js",
     "start": "npm run copy; putout --fix input-for-my-transform.js",
     "copy": "cp input-for-my-transform.js input-for-my-transform-original.js; cp my-transform.js ~/.putout",
-    "usepo": "NODE_PATH=. ./usepo.mjs input-for-my-transform.js"
+    "usepo": "./usepo",
+    "ruc": "./usepo input-remove-unreachable-code.js rem-unrech-cod"
   },
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
   "license": "ISC",
