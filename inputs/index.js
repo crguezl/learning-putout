@@ -1,6 +1,6 @@
 const unused = 5;
 
-export default function() {
+module.exports = function() {
     return promise();
 };
 

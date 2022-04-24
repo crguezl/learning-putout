@@ -1,7 +1,8 @@
 let a = 4;
+const unused = 'unused';
 function f(x) {
-  let y = 2 * x;
+  let y = x + x;
   let z = y + y * 3; // Will it work?
   return y + z;
 }
-2 * f(a);
+f(a) + f(a);

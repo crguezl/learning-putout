@@ -1,12 +1,15 @@
 #!/usr/bin/env node
 import putout from 'putout';
 import fs from 'fs';
-const inputFilename = process.argv[2] || 'input-for-my-transform.js';
+const inputFilename = process.argv[2] || 'inputs/input-for-my-transform.js';
 const source = fs.readFileSync(inputFilename, 'utf8');
 console.log(`----${inputFilename}----\n${source}\n`);
-const transfomName = process.argv[3] || 'my-transform';
-transfomName.replace(/^trasforms\/putout-plugin-/, '');
+import plugins from './plugins.mjs';
+//import rules from './rules.mjs';
+//transfomName.replace(/^trasforms\/putout-plugin-/, '');
 let result = putout(source, {
-    plugins: [ transfomName],
+    fix: true,
+    plugins: plugins, 
+    //rules: rules
 });
 console.log(`----Transformed Code----\n${result.code}\n`);
