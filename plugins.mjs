@@ -1,4 +1,5 @@
 export default [
   'my-transform.js',
-  'remove-unused-variables'
+  'remove-unused-variables',
+  "convert-commonjs-to-esm",
 ];
