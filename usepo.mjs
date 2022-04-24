@@ -7,11 +7,6 @@ console.log(`----${inputFilename}----\n${source}\n`);
 const transfomName = process.argv[3] || 'my-transform';
 transfomName.replace(/^trasforms\/putout-plugin-/, '');
 let result = putout(source, {
-    plugins: [
-        //'remove-unused-variables',
-        // 'my-transform', // searches for putout-plugin-my-transform.js
-        // 'rem-unrech-cod',
-        transfomName
-    ],
+    plugins: [ transfomName],
 });
 console.log(`----Transformed Code----\n${result.code}\n`);
