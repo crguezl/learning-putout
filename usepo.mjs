@@ -6,13 +6,7 @@ const source = fs.readFileSync(process.argv[2], 'utf8');
 let result = putout(source, {
     plugins: [
         'remove-unused-variables',
-        'my-transform',
+        'my-transform', // searches for putout-plugin-my-transform.js
     ],
 });
-/* returns
-({
-    code: `\n    const hello = 'world';\n\n    console.log(hello);\n`,
-    places: [],
-});
-*/
 console.log(result.code);
